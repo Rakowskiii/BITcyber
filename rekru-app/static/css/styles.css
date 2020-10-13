@@ -9,6 +9,7 @@
  }
 
  ul {
+    font-size: 25;
     list-style-type: none;
     text-align: center;
     margin: 0;
@@ -71,7 +72,8 @@ a {text-decoration: none;}
   }
 
   .navbar {
-    color:orange;
+    color:#afafaf;
+    font-family: sans-serif;
   }
   
   body{
