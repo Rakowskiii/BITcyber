@@ -44,8 +44,8 @@ a {text-decoration: none;}
 
   #container{
     margin-top: 4%;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 8%;
+    margin-right: 8%;
     display: flex;
     flex-basis: 8%;
     flex-wrap: wrap;
