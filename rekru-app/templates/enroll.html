@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block body %}
+<div id='enroll'>
+<form id="enroll_form" action = "/enroll" method = "POST">
+    <p><h3>Start your journey</h3></p>
+    <p><input type = 'text' name = 'username' placeholder = 'Username'/></p>
+    <p><input type = 'password' name = 'passwd' placeholder = 'Password'/></p>
+    <p><input type = 'password' name = 'passwd_confirm' placeholder = 'Confirm password'/></p>
+    <p><input type = 'submit' value = 'Enroll'/></p>
+</form>
+</div>
+{% endblock %}

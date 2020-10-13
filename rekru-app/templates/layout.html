@@ -1,0 +1,20 @@
+<!-- templates/layout.html -->
+<head>
+    <title>Vuln Blog</title>
+    <link rel="stylesheet" type= "text/css" href="{{url_for('static',filename='css/styles.css')}}">
+</head>
+<body>
+    <ul>
+        <li><a  class="navbar" href="/">Home</a></li>
+        {% if not session["logged_in"] %}
+        <li><a  class="navbar" href="/login">Login</a></li>
+        <li><a  class="navbar"href="/enroll">Enroll</a></li>
+        {% endif %}
+        <li><a  class="navbar"href="/about">About us</a></li>
+    </ul>
+    <div id="container">
+        {% block body %}
+        {% endblock %}
+    </div>
+    <div id="footer">BIT Cybersec</div>
+</body>

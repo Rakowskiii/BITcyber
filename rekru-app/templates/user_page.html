@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block body %}
+<div style="color: beige;text-align: center; margin-top: 7%;">
+    <img style="background: #000000;" src="{{url_for('static',filename='img/'+div.logo)}}"/>
+    <p style="text-align: center;" class="name">{{div.division}}</p>
+    <p class="description">{{div.description}}</p>
+    <a href={{div.link}}>Kontakt</a>
+</div>
+{% endblock %}
