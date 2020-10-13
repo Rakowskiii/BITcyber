@@ -49,6 +49,10 @@ def user():
         return not_found(0)
     return render_template("user_page.html", div=Division.query.all()[_id])
 
+@app.route("/about")
+def about():
+    return render_template("about_us.html", value = request.args.get("v"))
+
 @app.errorhandler(404)
 def not_found(e):
     return "<h1 align='center'> Sadly, page was not found.</h1>\n<!-- TODO Prepare better error page-->\n<!-- flag{wh0_3v3n_r34d2_th0s3_c0mm3n7s}-->"
@@ -56,4 +60,4 @@ def not_found(e):
 
 
 if __name__ == "__main__":
-    app.run(port=8080, host="0.0.0.0")
+    app.run(port=8000, host="0.0.0.0")

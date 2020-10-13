@@ -7,7 +7,9 @@
     <ul>
         <li><a  class="navbar" href="/">Home</a></li>
         {% if not session["logged_in"] %}
+        {% if false %}
         <li><a  class="navbar" href="/login">Login</a></li>
+        {% endif %}
         <li><a  class="navbar"href="/enroll">Enroll</a></li>
         {% endif %}
         <li><a  class="navbar"href="/about">About us</a></li>
