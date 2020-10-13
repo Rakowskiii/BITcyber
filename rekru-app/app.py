@@ -6,7 +6,7 @@ app.static_folder = 'static'
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///example.sqlite"
 db = SQLAlchemy(app)
 
-
+#test
 class Division(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     division = db.Column(db.String(64), index=True, unique=True)
