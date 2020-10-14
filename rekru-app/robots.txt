@@ -1,0 +1,2 @@
+User-Agent:/*
+Disallow:/flag{4r3_y0u_mr_r0b0t}
