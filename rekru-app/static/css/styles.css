@@ -98,3 +98,7 @@ a {text-decoration: none;}
   #take_me_back{
     color: orange;
   }
+
+  #desc{
+    font-family: Helvetica;
+  }

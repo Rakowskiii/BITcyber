@@ -3,7 +3,7 @@
 <div></div>
 {% for div in mockup %}
 <div class="post">
-    <a href="/user?id={{div.id}}">
+    <a href="/division?id={{div.id}}">
         <img style="background: #000000;" src="{{url_for('static',filename='img/'+div.logo)}}"/>
     </a>
 </div>

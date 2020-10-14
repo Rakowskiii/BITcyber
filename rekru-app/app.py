@@ -37,9 +37,9 @@ def enroll():
         #POST
         return render_template("enrolled.html")
 
-@app.route("/user") 
+@app.route("/division") 
 def user():
-    if request.args.get("id") == "flag":
+    if request.args.get("id") == "35":
         return "flag{n1c3_id0r}"
     try:
         _id=int(request.args.get("id"))
@@ -53,6 +53,10 @@ def user():
 def about():
     return render_template("about_us.html", value = request.args.get("v"))
 
+@app.route("/robots.txt")
+def robots():
+    return open("robots.txt","r").read()
+
 @app.errorhandler(404)
 def not_found(e):
     return "<h1 align='center'> Sadly, page was not found.</h1>\n<!-- TODO Prepare better error page-->\n<!-- flag{wh0_3v3n_r34d2_th0s3_c0mm3n7s}-->"
@@ -60,6 +64,6 @@ def not_found(e):
 
 
 if __name__ == "__main__":
-    app.run(port=8080, host="46.101.100.104")
+    app.run(port=8000, host="0.0.0.0")
 
 #46.101.100.104
