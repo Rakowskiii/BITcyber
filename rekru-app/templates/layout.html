@@ -4,7 +4,7 @@
     <link rel="stylesheet" type= "text/css" href="{{url_for('static',filename='css/styles.css')}}">
 </head>
 <body>
-    <ul>
+    <ul id="navbar">
         <li><a  class="navbar" href="/">Home</a></li>
         {% if not session["logged_in"] %}
         {% if false %}
