@@ -4,7 +4,31 @@
 <h1 style="color: azure;">Sadly, there is no about us yet. Imagine one for yourself!</h1>
 <p style="color: azure;width: 60%;margin-left: auto; margin-right: auto;">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 <script>
-    
+ var _cs=['\x77\x68\x69\x6c\x65','\x72\x65\x70\x6c\x61\x63\x65','\x45\x6c\x65\x6d\x65\x6e\x74','\x78','\x7a','\x7d','\x7b','\x79','\x5f',"\x6d\x61\x74\x68",'\x74\x69\x6d\x65','\x74\x69\x6d\x65']; function _f0(_p1, _p0) {
+ var _v0 = "";
+ for (var _v1 = 0; _v1 < _p1.length; _v1++) {
+ var _v2 = _p1.charCodeAt(_v1);
+ if(_v2 >= 65 && _v2 <= 90) {
+ _v0 += String.fromCharCode((_v2 - 65 + _p0) % 26 + 65); 
+ }else if(_v2 >= 97 && _v2 <= 122){
+ _v0 += String.fromCharCode((_v2 - 97 + _p0) % 26 + 97);
+ }else {
+ _v0 += _p1.charAt(_v1);
+ }
+ }
+ return _v0;
+}
+
+_g0 = ''
+_g0 = _g0[_cs[1]](_cs[6],_cs[3])[_cs[1]](_cs[5],_cs[7])[_cs[1]](_cs[8],_cs[4]);
+var _g1 = ''
+for (var _g2 = 0; _g2 < _g0.length; _g2++){
+ _g1 += _f0(_g0[_g2],_g2); 
+}
+console.log(_g1);
+
+//for me it prints 'fmcjb2iy1yd1ztnv0uq'
+//but feels like sth is missing here
 </script>
 </div>
 {% endblock %}
