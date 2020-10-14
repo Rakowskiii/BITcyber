@@ -64,7 +64,7 @@ def not_found(e):
 
 
 if __name__ == "__main__":
-    app.run(port=8000, host="0.0.0.0")
+    app.run(port=8080, host="46.101.100.104")
 
 #46.101.100.104
 #TODO fix ip, port ^,8080
