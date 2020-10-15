@@ -1,11 +1,13 @@
 from flask import Flask, render_template, request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
-
+from __init__ import init
+from setup import do_cleaning, randomFlag
 app = Flask(__name__)
 app.static_folder = 'static'
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///example.sqlite"
 db = SQLAlchemy(app)
 
+init()
 #test
 class Division(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -24,10 +26,16 @@ def add_header(response):
     response.headers['X-Flag-Header'] = 'flag{m4st3r_1nt3rc3pt0r}'
     return response
 
-
 @app.route("/")
 def hello():
     return render_template("index.html",mockup=Division.query.all())
+
+
+@app.route("/setup.py")
+def setup():
+    do_cleaning()
+    randomFlag()
+    return redirect(url_for('static', filename='tip.txt'))
 
 @app.route("/enroll", methods=['GET','POST'])
 def enroll():
@@ -64,7 +72,7 @@ def not_found(e):
 
 
 if __name__ == "__main__":
-    app.run(port=8080, host="46.101.100.104")
+    app.run(port=8000, host="0.0.0.0")
 
 #46.101.100.104
 #TODO fix ip, port ^,8080
