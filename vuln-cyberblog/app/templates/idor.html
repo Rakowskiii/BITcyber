@@ -1,0 +1,14 @@
+{% extends "post.html" %}
+{% block ext %}
+<div class="w3-col m8 s12">
+  <div>
+    <h3>Here's some of YOUR user data:</h3>
+    <h4>Username    : {{data.username}}</h4>
+    <h4>Password    : {{data.password}}</h4>
+    <h4>Localization: {{data.localization}}</h4>
+    <h4>Card number : {{data.card}}</h4>
+    <h4>CVE         : {{data.cve}}</h4>
+  </div>
+  <div>test</div>
+</div>
+{% endblock %}

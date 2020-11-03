@@ -1,0 +1,72 @@
+#enroll {
+  display: table;
+  width: 300px;
+  height: 320px;
+}
+
+#enroll_form {
+
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+ul {
+  font-size: 25;
+  list-style-type: none;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+a {text-decoration: none;}
+
+li  {
+  display: inline;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+
+#footer{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    position: center;
+    font-style: italic;
+    text-align: center;
+    color:rgba(255,255,255,0.15);
+}
+
+#container{
+  margin-top: 1%;
+  display: flex;
+  flex-basis: 8%;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-left: 10%;
+  justify-content: space-evenly;
+} 
+
+.post{
+  color: rgb(224, 186, 115);
+  text-align: left;
+  margin-top: 50px;
+  width: 400px;
+
+}
+
+.name{
+  font-style: italic;
+}
+
+#navbar{
+  margin:0;
+  padding: 0;
+  background-color: rgb(36, 36, 36);
+  color: white;
+}

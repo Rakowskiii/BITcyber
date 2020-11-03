@@ -1,0 +1,43 @@
+{% extends "post.html" %}
+{% block ext %}
+<div class="w3-col m8 s12">
+    <form method="post" enctype="multipart/form-data">
+        <div>
+          <label for="file">Choose file to upload</label>
+          <input type="file" id="file" name="file" multiple>
+        </div>
+        <div>
+          <button>Submit</button>
+        </div>
+    </form>
+
+    {% if request.args.get("uploaded") == "true" %}
+       <p>Success</p>
+    {% elif request.args.get("uploaded")== "false" %}
+       <p>Failed to upload</p>
+    {% endif %}
+
+    <div style="padding-top: 5rem;">
+        <label >Choose file to load</label>
+        <input type="text" id="ofile" >
+    </div>
+    <div>
+          <script>
+          function clicked(){
+            var fixed = document.getElementById("ofile").value;
+            while (fixed.match(/[\.\/]/)){
+                fixed = fixed.replace(/\./,'');
+                fixed = fixed.replace(/\//,'');
+            }
+            window.location.href=window.location.href.replace(/&.*/,"")+"&file="+fixed;
+          }
+          </script>
+          <button onclick=clicked()>Submit</button>
+    </div>
+    <div style="padding-top: 3rem">
+        {% if ofile %}
+            {{ofile}}
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

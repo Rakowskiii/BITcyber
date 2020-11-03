@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+{% block body %}
+<div style="color: beige;text-align: center; margin-top: 7%;">
+    <img style="background: #000000;width: 400px;height: 400px;margin-left: auto;margin-right: auto;" src="{{url_for('static',filename='img/'+div.logo)}}"/>
+    <p class="description">{{div.description}}</p>
+    <a id="desc" href={{div.link}} style="color:greenyellow;">Kontakt</a>
+</div>
+{% endblock %}

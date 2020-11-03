@@ -1,0 +1,29 @@
+{% extends "layouts/layout.html" %}
+{% block body %}
+<div class="w3-col l8 s12">
+    <div class="w3-card-4 w3-margin w3-white">
+        <div class="w3-container" style="height: 40rem;text-align: center;padding-top: 4rem;">
+            {% if logged_in %}
+            <h1>Admin page</h1>
+            <form method="post" id="form" style="padding-top: 9rem;">
+                <div>
+                  <label for="activate">Activate IDOR post.</label>
+                </div>
+                <div>
+                    <input type="hidden" name="activate" value="tajnykoddoaktywacjiadmina">
+                    <input type="submit" value="Activate"></input>
+                </div>
+            </form>
+            <p>Status: </p>
+            {% if active %}
+            <p style="color: green;">Active</p>
+            {% else %}
+            <p style="color: red;">Inactive</p>
+            {% endif %}
+            {% else %}
+            <h3 style="text-align: center;padding-top: 14rem;"><b>Your role doesn't look like admin's.</b></h3>
+            {% endif %}
+          </div>
+    </div>
+</div>
+{% endblock %}
