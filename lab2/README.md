@@ -59,6 +59,7 @@ This is unnecessary for our laboratory, but could be helpful to understand a few
 
 * [PortSwigger - Server Side Template Injection](https://portswigger.net/research/server-side-template-injection)
 * [SSTI - Cheatsheet](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Server%20Side%20Template%20Injection)
+* [Building SSTI Python Payload](https://www.onsecurity.io/blog/server-side-template-injection-with-jinja2/)
 * [Sekurak - SSTI w wielu silnikach (w tym ucieczka z Sandboxu)](https://sekurak.pl/podatnosc-server-side-template-injections/)
 * [Understanding Reverse Shells](https://www.netsparker.com/blog/web-security/understanding-reverse-shells/)
 * [Reverse Shell Cheatsheet](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md)
@@ -67,6 +68,7 @@ This is unnecessary for our laboratory, but could be helpful to understand a few
 * [PortSwigger - OS Command Injection](https://portswigger.net/web-security/os-command-injection)
 * [Sockets programming in Python](https://docs.python.org/3/howto/sockets.html)
 * [Socket types and formats](https://man7.org/linux/man-pages/man2/socket.2.html)
+* [Esoteric programming languages (just for Your information, JSFuck could be useful sometimes)](https://en.wikipedia.org/wiki/Esoteric_programming_language)
 
 # Author
 
