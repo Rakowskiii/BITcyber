@@ -49,6 +49,7 @@
 * [sqlmap](http://sqlmap.org/)
 * [Docker](https://docs.docker.com/get-docker/)
 * [Docker Compose](https://docs.docker.com/compose/install/)
+* [netcat](https://eternallybored.org/misc/netcat/) - installed by default on Linux, download for Windows (only for Hard Challenge)
 
 # Presentation
 

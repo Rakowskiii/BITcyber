@@ -1,0 +1,3 @@
+[submodule "lab2/injection_lab"]
+	path = lab2/injection_lab
+	url = https://github.com/Djkusik/agh_websec_injection_lab.git
