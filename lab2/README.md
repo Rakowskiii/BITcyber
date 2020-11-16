@@ -53,6 +53,7 @@
 # Presentation
 
 * [BITCyberSec - Lab 2](https://docs.google.com/presentation/d/12c8591FqKSXGSwr0F2TNnR7QoXbyXRqF7906HU_dZKU/edit?usp=sharing)
+* [Wstęp do HTTP (i nie tylko) z poprzedniego roku](https://docs.google.com/presentation/d/1Lavn_jpTyCrp3OAmgn1-c0DsHZhhJ5FHwiDXWde55XU/edit?usp=sharing)
 
 # Bonus content
 This is unnecessary for our laboratory, but could be helpful to understand a few things or just learn more.
