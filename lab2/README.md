@@ -46,14 +46,13 @@
 # To install
 
 * [Burp](https://portswigger.net/)
-* [sqlmap](http://sqlmap.org/)
 * [Docker](https://docs.docker.com/get-docker/)
 * [Docker Compose](https://docs.docker.com/compose/install/)
 * [netcat](https://eternallybored.org/misc/netcat/) - installed by default on Linux, download for Windows (only for Hard Challenge)
 
 # Presentation
 
-* Will be published before laboratories.
+* [BITCyberSec - Lab 2](https://docs.google.com/presentation/d/12c8591FqKSXGSwr0F2TNnR7QoXbyXRqF7906HU_dZKU/edit?usp=sharing)
 
 # Bonus content
 This is unnecessary for our laboratory, but could be helpful to understand a few things or just learn more.
